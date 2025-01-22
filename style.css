@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url(background.png);
+    color: #530087;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.welcome-section, .login-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.welcome-section {
+    color: #ccc;
+    text-align: left;
+    mix-blend-mode: color-dodge;
+}
+
+.welcome-section h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+}
+
+.login-section {
+    background: #eee8;
+    backdrop-filter: blur(1rem) saturate(1.5);
+}
+
+.login-section h1 {
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #530087;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem 0.8rem 0.8rem 2.5rem;
+    font-size: 1rem;
+    border: 1px solid #530087;
+    border-radius: 0.5rem;
+    color: #530087;
+}
+
+.input-group input::placeholder {
+    color: #53008788;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-bottom: 1rem;
+    color: #530087;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    padding: 0.8rem;
+    background: linear-gradient(45deg, #942d82, #480878);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #480878, #942d82);
+}
+
+.hidden {
+    display: none;
+}
+
+#error-message {
+    background: #f25;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+
+

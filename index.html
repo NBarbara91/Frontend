@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bejelentkezés</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-section">
+            <h1>Üdvözöljük!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu fermentum nisi.</p>
+        </div>
+        <div class="login-section">
+            <h1>uniadmin</h1>
+            <form id="login-form">
+                <div class="input-group">
+                    <i class="ph-user-circle"></i>
+                    <input type="text" id="username" placeholder="Felhasználónév" required>
+                </div>
+                <div class="input-group">
+                    <i class="ph-lock"></i>
+                    <input type="password" id="password" placeholder="Jelszó" required>
+                </div>
+                <a href="#" class="forgot-password">Elfelejtett jelszó?</a>
+                <button type="submit">Bejelentkezés</button>
+                <p id="error-message" class="hidden">Hibás felhasználónév vagy jelszó!</p>
+            </form>
+        </div>
+    </div>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="script.js"></script>
+</body>
+</html>
